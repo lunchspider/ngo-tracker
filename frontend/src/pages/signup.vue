@@ -1,10 +1,12 @@
 <template>
   <v-card title = "Signup">
+    <v-card-text>
     <form ref = "form" @submit.prevent = "">
-      <v-text-input label = "Name" v-model = "user.name"></v-text-input>
-      <v-text-input label = "Mobile" v-model = "user.mobile"></v-text-input>
+      <v-text-field label = "Name" v-model = "user.name"></v-text-field>
+      <v-text-field label = "Mobile" v-model = "user.mobile"></v-text-field>
     </form>
     <router-link to = "/login" >Login</router-link>
+    </v-card-text>
   </v-card>
 </template>
 <script setup lang = "ts">
